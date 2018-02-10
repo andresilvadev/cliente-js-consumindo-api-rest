@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cliente JS - Consumindo uma API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+</head>
+
+<body class="js-body">
+
+    <div class="container is-fluid">
+        <div class="content">
+
+            <div>
+                <h1 class="title">
+                    Listagem de Posts
+                </h1>
+                <h1 class="title">
+                    <button class="js-load-posts button is-primary">Listar Posts</button>
+                </h1>
+            </div>                      
+            <div class="card">
+                <div class="card-content">
+                    <table class="js-posts-table table is-responsive is-narrow is-striped is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>ID USUÁRIO</th>
+                                <th>ID POST</th>
+                                <th>TÍTULO</th>
+                                <th>PUBLICAÇÃO</th>
+                            </tr>
+                        </thead>
+                        <tbody class="js-posts-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="postsClient.js"></script>
+
+</body>
+
+</html>
